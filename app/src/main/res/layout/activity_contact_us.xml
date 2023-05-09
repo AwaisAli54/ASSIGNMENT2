@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs">
+
+    <Button
+        android:id="@+id/CallUs"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+
+
+        android:text="CALL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsApp" />
+
+    <EditText
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+
+
+        android:inputType="text"
+        android:hint="enter Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="409dp"
+        android:layout_height="78dp"
+        android:text="Contact us"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="371dp"
+        android:layout_height="62dp"
+
+        android:layout_marginTop="75dp"
+
+        android:ems="10"
+        android:hint="enter Title"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Description" />
+
+    <Button
+        android:id="@+id/whatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+
+
+        android:backgroundTint="#4CAF50"
+        android:drawableLeft="@drawable/baseline_whatsapp_24"
+        android:text="Whatsapp US"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Send" />
+
+    <Button
+        android:id="@+id/Browser"
+        android:layout_width="379dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#3F51B5"
+        android:shadowColor="@color/design_default_color_primary_variant"
+        android:text="Visit Our Website"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CallUs" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
