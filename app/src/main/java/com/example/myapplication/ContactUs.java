@@ -41,7 +41,7 @@ public class ContactUs extends AppCompatActivity {
                 } else {
                     Intent emailIntent = new Intent(Intent.ACTION_SEND);
                     emailIntent.setType("plain/text");
-                    emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"tariqsbadar@gmail.com", "kkaleemuddin@gmail.com"});
+                    emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"awais.alipu549@gmail.com.com", "kkaleemuddin@gmail.com"});
                     emailIntent.putExtra(Intent.EXTRA_SUBJECT, title);
                     emailIntent.putExtra(Intent.EXTRA_TEXT, description);
                     startActivity(Intent.createChooser(emailIntent, "Send email..."));
